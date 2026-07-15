@@ -1,0 +1,1330 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f5f5f5;
+    --nav-bg: #1a1a1a;
+    --nav-text: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --nav-bg: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+width: 48px;
+height: 48px;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    color: var(--nav-text);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+
+.section {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.content-box {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+.image-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.divider
+{
+  width: 100%;
+  height: 1px;
+  border-top: 5px solid rgb(101, 170, 227);
+  margin-top: 15px;
+
+}
+
+section {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.9;
+    text-wrap: pretty;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+
+/* สัดส่วนย่อหน้า 1 */
+.section-1{
+    gap: 15px;
+    display: flex;
+}
+.section-1 .content-box { width: 50%; }
+.section-1 .article-01_img { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 50%; 
+    gap: 5px;
+    align-items: center;
+  
+}
+ .section-1 .article-01_img img{
+    width: 100%;
+    min-height: 180px;
+    border-radius: 15px;
+ }   
+/* .grid-2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+} */
+
+
+/* สัดส่วนย่อหน้า 2 */
+.section-p2 .image-grid { width: 40%; }
+.section-p2 .content-box { width: 60%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.article-02_1_img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.article-02_1_img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* สัดส่วนย่อหน้า 3 */
+.section-3{
+    gap: 15px;
+    display: grid;
+}
+
+.section-3 .article-03_img {     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;}
+
+.article-03_img img{
+        width: 100%;
+    border-radius: 15px;
+}
+
+.section-3 .content-box { width: 100%; }
+
+
+
+/* สัดส่วนย่อหน้า 4 */
+.section-4 {
+    display: flex;
+    gap: 15px;
+}
+.section-4 .article-04_1_img { width: 50%; }
+.section-4 .content-box { width: 50%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.article-04_1_img{
+    display: grid;
+    width: 100%;
+    min-width: 0;      /* บั๊กเดียวกับ article-06_img: ไม่มี grid-template-columns กำกับ จึงต้องกันด้วย min-width:0 */
+    overflow: hidden;
+    align-items: center;
+}
+.article-04_1_img img{
+    display: grid;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+/* สัดส่วนย่อหน้า 5 */
+/* .section-p4 {
+    flex-direction: column;
+} */
+
+.section-5 .image-grid { width: 40%; }
+.section-5 .content-box { width: 60%; }
+
+
+.section-p5_1 .image-grid { width: 60%; }
+.section-p5_1 .content-box { width: 40%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-p5_2 .content-box { width: 75%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.article-05_2_img{
+display: grid;
+width: 25%;
+background-color: var(--card-bg);
+border-radius: 15px;
+justify-content: center;
+}
+
+.article-05_2_img img {
+    display: block;
+    width: 120px;
+    height: 120px;
+
+}
+
+
+
+.section-p5_3 .image-grid { width: 100%; }
+.section-p5_3 .content-box { width: 100%; }
+.grid-flexible5_2 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.section-6 .content-box{
+    width: 60%;
+}
+.section-6_img{
+    width: 40%;
+}
+
+.section-6_img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.section-p6_1 .image-grid { width: 40%; }
+.section-p6_1 .content-box { width: 60%; }
+
+
+.section-p6_2 .image-grid { width: 100%;}
+.section-p6_2 .content-box { width: 100%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-p6_3 .image-grid { width: 40%;}
+.section-p6_3 .content-box { width: 60%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-p6_4 .image-grid { width: 40%;}
+.section-p6_4 .content-box { width: 60%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.section-p7{ display: grid;}
+.section-p7 .image-grid { width: 100%; }
+.section-p7 .content-box { width: 100%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.section-p8{display: flex;}
+.section-p8 .image-grid { width: 40%; }
+.section-p8 .content-box { width: 60%; }
+.grid-flexible8 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-p8_1 {display: flex;}
+.section-p8_1 .image-grid { width: 40%; }
+.section-p8_1 .content-box { width: 60%; }
+.grid-flexible8_1 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.section-8_2 .image-grid { width: 40%; }
+.section-8_2 .content-box { width: 60%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.section-p8_3 .image-grid { width: 100%; }
+.section-p8_3 .content-box { width: 100%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.section-p8_4 .image-grid { width: 100%; }
+.section-p8_4 .content-box { width: 100%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-p8_5 .image-grid { width: 30%; }
+.section-p8_5 .content-box { width: 70%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-p8_6 .image-grid { width: 100%; }
+.section-p8_6 .content-box { width: 100%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-p9 .image-grid { width: 40%; }
+.section-p9 .content-box { width: 60%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-p9_1 .image-grid { width: 40%; }
+.section-p9_1 .content-box { width: 60%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-p9_2 .image-grid { width: 40%; }
+.section-p9_2 .content-box { width: 60%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.section-p9_3 .image-grid { width: 100%; }
+.section-p9_3 .content-box { width: 100%; }
+
+
+.section-p9_4 .image-grid { width: 40%; }
+.section-p9_4 .content-box { width: 60%; }
+
+
+.section-p9_5 .image-grid { width: 30%; }
+.section-p9_5 .content-box { width: 70%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.section-p9_6 .image-grid { width: 100%; }
+.section-p9_6 .content-box { width: 100%; }
+.grid-flexible9_6 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.section-p9_7 .image-grid { width: 35%;; }
+.section-p9_7 .content-box { width: 65%; }
+.grid-flexible{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.section-10 .image-grid { width: 100%;; }
+.section-10.content-box { width: 100%; }
+
+.section-11 .article-11_img { width: 100%;
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+}
+.section-11 .content-box { width: 100%; }
+
+.section-11 .article-11_img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.mauser66{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mauser66 img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.s66_2
+{
+    border-radius: 15px;
+    background-color: var(--card-bg);
+    align-items: center;
+    display:grid;
+}
+
+.section-p12 .image-grid { width: 100%;; }
+.section-p12 .content-box { width: 100%; }
+.grid-flexible{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.section-p12_2 .image-grid { width: 100%;; }
+.section-p12_2 .content-box { width: 100%; }
+.grid-flexible{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+
+.section-p14 .image-grid { width: 30%;; }
+.section-p14 .content-box { width: 70%; }
+.grid-flexible{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.medal{
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+}
+
+.medal img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.medal_coin{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ribbon{
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ribbon_card{
+    display: grid;
+    text-align: center;
+    gap: 15px;
+    color: var(--text-color);
+    
+}
+
+.ribbon img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.ribbon_img{
+    display: flex;
+    
+}
+.section-17 .article_-16_2_img { width: 50%;; }
+.section-17 .content-box { width: 50%; }
+
+
+.section-16 .image-grid { width: 30%;; }
+.section-16 .content-box { width: 70%; }
+.grid-flexible {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.article_-16_1_img
+{
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   justify-items: center;
+    gap: 15px;
+}
+
+.article_-16_1_img img
+{
+    width: 100%;
+    display: grid;
+    border-radius: 20px;
+
+}
+
+
+.article_-16_2_img
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.article_-16_2_img img
+{
+    width: 100%;
+    display: grid;
+    border-radius: 20px;
+
+}
+
+.king_battle_2{
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.king_battle{
+max-width: 1200px;
+justify-items: center;
+display: grid;
+}
+
+.king_battle img{
+    display: grid;
+width: 95%;
+border-radius: 15px;
+}
+
+.ribbon{
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.king_battle_2{
+max-width: 1200px;
+justify-items: center;
+display: grid;
+}
+
+
+.king_battle_2 img 
+{
+display: grid;
+width: 100%;   /* เพิ่มไว้: เดิมไม่ได้กำหนด width ทำให้รูปอาจแสดงตามขนาดไฟล์จริงและล้นช่องกริด */
+height: auto;
+border-radius: 15px;
+}
+
+
+.section-19 .content-box { width: 100%; }
+.section-19 .article-20_1_img { width: 100%;}
+
+.section-19_1 .image-grid { width: 100%;; }
+.section-19_1 .content-box { width: 100%; }
+
+.article-20_2{
+width: 100%;
+display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 15px;
+    
+}
+
+.article-20_2 .article-20_2_img{
+width: 100%;
+display: grid;
+align-items: center;
+}
+
+.article-20_2 .article-20_2_img img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+.article-20_1 {
+    display: grid;
+}
+
+.article-20_1_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.article-20_1_img img {
+    width: 50%;
+    border-radius: 15px;
+}
+.section-20 .image-grid { width: 50%;; }
+.section-20 .content-box { width: 50%; }
+
+
+.section-21 .image-grid { width: 100%;; }
+.section-21 .content-box { width: 100%; }
+
+
+.section-22 .image-grid { width: 100%;; }
+.section-22 .content-box { width: 100%; }
+
+.section-23 .image-grid { width: 100%;; }
+.section-23 .content-box { width: 100%; }
+
+.section-24 .image-grid { width: 100%;; }
+.section-24 .content-box { width: 100%; }
+
+.section-25 .image-grid { width: 35%; gap: 15px; }
+.section-25 .content-box { width: 65%; }
+
+.section-26 .article-26-img { width: 60%;
+display: grid;
+gap: 15px;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+align-items: center;
+}
+.section-26 .content-box { width: 40%; }
+.article-26-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.section-27 .image-grid { width: 100%;; }
+.section-27 .content-box { width: 100%; }
+
+.section-28 .image-grid { width: 40%;; }
+.section-28 .content-box { width: 60%; }
+
+
+.section-29 .image-grid { width: 50%; }
+.section-29 .content-box { width: 50%; }
+
+.section-30 .content-box { width: 100%; }
+.section-30 .article-30-img { width: 100%;
+display: grid;
+gap: 15px;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+align-items: center;
+}
+.article-30-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.section-31 .content-box { width: 100%; }
+.section-31 .article-31-img { width: 100%;
+display: grid;
+gap: 15px;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+align-items: center;
+}
+.article-31-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.section-32 .image-grid { width: 100%; }
+.section-32 .content-box { width: 100%; }
+
+.section-33 .image-grid { width: 100%; }
+.section-33 .content-box { width: 100%; }
+
+.section-34 .image-grid { width: 100%; }
+.section-34 .content-box { width: 100%; }
+
+.section-35 .image-grid { width: 100%; }
+.section-35 .content-box { width: 100%; }
+
+.section-36 .image-grid { width: 100%; }
+.section-36 .content-box { width: 100%; }
+
+.section-37 .image-grid { width: 100%; }
+.section-37 .content-box { width: 100%; }
+
+.section-38 .content-box { width: 40%; }
+.section-38 .image-grid { width: 60%;}
+
+.section-39 .content-box { width: 100%; }
+.section-39 .image-grid { width: 100%;}
+
+.section-39 .article-39-img { width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 15px;
+
+}
+.article-39-img img{
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.section-40  { width: 100%;
+display: grid;
+/* grid-template-columns: repeat(2, 1fr); */
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.section-40 a {
+text-decoration: none;
+color: var(--text-color);
+}
+
+.section-40_1{
+display: grid;
+text-align: center;
+}
+
+.section-40_1 img{
+display: grid;
+width: 100%;
+border-radius: 15px;
+}
+
+
+
+/* (ย้ายกฎเดิมไปรวมกับชุด Media Query หลักท้ายไฟล์ เพื่อไม่ให้ขัดแย้งกัน) */
+
+/* card box */
+
+
+/* 1. จัดการกรอบพื้นที่ภาพรวมของเนื้อหา และระยะห่างของข้อความหัวข้อ */
+.content-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px; /* เว้นระยะห่างด้านล่างหัวข้อ ไม่ให้รูปดันขึ้นไปทับ */
+}
+
+.section-title h2 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* 2. เปิดใช้งานระบบ Grid ให้กับกลุ่มกล่องรวมการ์ดรูปภาพ (.cardbox) */
+.cardbox {
+    display: grid;
+    /* สร้างคอลัมน์อัตโนมัติ ขนาดขั้นต่ำใบละ 240px และแบ่งขยายขนาดเท่ากันทุกใบในแถว */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 100%;
+    gap: 15px;
+}
+
+/* 3. ปรับแต่งโครงสร้างตัวการ์ดแต่ละใบ (.card) */
+.card {
+width: 100%;
+}
+
+
+
+/* 4. จัดแนวรูปภาพและชื่อด้านในให้เรียงจากบนลงล่าง (.card_data) */
+.card_data {
+    display: flex;
+    flex-direction: column; /* บังคับทิศทาง: รูปภาพอยู่บน -> ข้อความอยู่ล่าง */
+    align-items: center;    /* จัดองค์ประกอบให้อยู่กึ่งกลางในแนวตั้ง */
+    text-align: center;            /* เว้นระยะระหว่างรูปภาพและตัวอักษรด้านล่าง */
+    width: 100%;
+    height: auto !important; /* ล้างค่าล็อกความสูงเดิมที่อาจขัดแย้งกัน */
+
+}
+
+/* 5. ปรับแต่งรูปภาพให้แสดงผลแบบ "เต็มใบดั้งเดิม" สัดส่วนไม่บิดเบี้ยว */
+.card_data img {
+    width: 100%;
+    height: auto;           /* ปรับความสูงอัตโนมัติตามสัดส่วนจริงของรูปภาพ */   /* จำกัดความสูงสูงสุดไม่ให้ยาวเทอะทะจนเกินไป */
+    object-fit: contain;
+       border-radius: 15px;
+
+}
+
+/* 6. สไตล์ชื่อรูปภาพที่อยู่ด้านล่างสุด */
+.card_data span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    display: block;
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* 7. เพิ่มลูกเล่นมิติ (Hover Effect) เมื่อนำเมาส์ไปชี้ที่การ์ด */
+.card:hover {
+scale: 1.05;
+}
+
+/* navbar */
+
+/* ========================================================
+   ระบบเมนูหลักด้านบนสุด (Top Navigation)
+   ======================================================== */
+
+nav {
+    background-color: var(--nav-bg); /* เปลี่ยนมาใช้ตัวแปรธีม */
+    position: sticky;
+    top: 80px;      
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+}
+
+#main-nav.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0; 
+    overflow: hidden;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    list-style: none;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li:last-child {
+    margin-left: auto; 
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--nav-text); /* สีตัวอักษรตามธีม */
+    text-decoration: none;
+    transition: 0.3s;
+    white-space: nowrap; 
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px; 
+    list-style: none;
+    background-color: var(--nav-bg); /* สี dropdown ล้อตามธีม */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1002;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown a {
+    padding: 12px 15px;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+/* ========================================================
+   ระบบปุ่ม Hamburger ลอย (Floating Hamburger Menu)
+   ======================================================== */
+
+.floating-hamburger-container {
+    position: fixed;
+    bottom: 30px;        
+    right: 30px;         
+    z-index: 2000;       
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.floating-hamburger-container.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ปุ่มวงกลมลอย */
+.floating-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--nav-bg);  /* ปรับสีปุ่มตามโหมดมืด/สว่างอัตโนมัติ */
+    color: var(--nav-text);           /* ปรับสีไอคอนตามโหมดมืด/สว่างอัตโนมัติ */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1); 
+    filter: brightness(1.2);
+}
+
+/* กล่องรายการเมนูที่เด้งแสดงผลขึ้นมา */
+.floating-menu-wrapper {
+    position: absolute;
+    bottom: 70px;        
+    right: 0;
+    width: 280px;
+    background-color: var(--card-bg); /* ใช้สีการ์ดของธีม เปลี่ยนแปลงตาม Day/Night */
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(15px);
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.floating-menu-wrapper.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.floating-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.floating-menu-list li a {
+    display: block;
+    padding: 12px 20px;
+    color: var(--text-color); /* ใช้สีตัวอักษรหลักที่จะเปลี่ยนเป็นสีสว่างในโหมดมืด */
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    transition: background 0.2s ease, padding 0.2s ease, color 0.2s ease;
+}
+
+.floating-menu-list li:last-child a {
+    border-bottom: none;
+}
+
+.floating-menu-list li a:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+    padding-left: 25px; 
+}
+
+/* (ย้ายกฎ nav/menu สำหรับมือถือไปรวมกับชุด Media Query หลักท้ายไฟล์) */
+
+/* ==========================================================================
+   กันบั๊กรูปภาพล้นกรอบ (Overflow Safety Net)
+   ที่มา: .article-06_img (section-6) และ .article-04_1_img (section-4) เคยเกิดบั๊ก
+   เพราะเป็น flex/grid item ที่ไม่ได้กำหนด grid-template-columns ของตัวเอง แล้วข้างใน
+   มี <img width:100%> ทำให้เบราว์เซอร์คำนวณความกว้างขั้นต่ำจากขนาดไฟล์รูปจริง
+   แทนที่จะใช้ % ที่ตั้งไว้ (min-width: auto คือค่าเริ่มต้นของ flex/grid item)
+
+   กฎด้านล่างนี้ตั้ง min-width: 0 ให้กล่องเนื้อหาและกล่องรูปภาพทุกแบบใน section
+   ต่างๆ ไว้ล่วงหน้า เพื่อป้องกันปัญหาเดียวกันเกิดซ้ำใน section อื่นๆ ที่เหลือ
+   (ไม่กระทบ layout เดิม เพราะทุกตัวมีการกำหนด width แบบ % ไว้อยู่แล้ว)
+   ========================================================================== */
+.section > *,
+[class^="section-"] > *,
+.content-box,
+.image-grid,
+[class*="_img"],
+[class*="-img"] {
+    min-width: 0;
+}
+
+/* board */
+
+/* 1. Responsive Grid: รองรับหน้าจอทุกขนาด (Auto-fit) */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+    justify-items: center;
+}
+
+/* 2. ปรับปรุง Card Body: ให้ขนาดพอดี และควบคุม layout ด้วย Flexbox */
+.card_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    height: auto; /* ปรับลดความสูงให้สมดุลกับเนื้อหา */
+    border: 2px solid var(--border-color);
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden; /* ป้องกันเนื้อหาหลุดกรอบ */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ส่วนรูปภาพภายในเนื้อหาการ์ด */
+.card_pic {
+    width: 100%;
+    height: 100%; /* ให้พื้นที่รูปภาพ 70% ของตัวการ์ด */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* บังคับให้รูปตัดพอดีกรอบ ไม่บดบังหรือยืดเสียสัดส่วน */
+}
+
+/* ส่วนข้อมูลชื่อและตำแหน่งงาน/สินค้า (ให้อยู่ในกรอบ body แน่นอน) */
+.card_data {
+    height: 15%; /* พื้นที่ส่วนข้อมูล 30% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--card-text);
+    padding-top: 10px;
+}
+
+.card_name h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.card_job h4 {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* next_previous */
+
+   .back_next{
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center;
+    gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+    margin: 20px 0;
+}
+
+.back_next button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.back_next button:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+#prevBtn{
+    background-color: #f1f1f1;
+    color: black;
+}
+
+#nextBtn{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+
+
+
+
+/* ==========================================================================
+   Responsive Design & Media Queries
+   แบ่งเป็น 4 กลุ่มหลัก: Desktop (>=1200px) / Notebook (992-1199px) /
+   Tablet (768-991px) / Phone (<768px, แยกย่อย <600px และ <480px)
+
+   แนวคิดหลัก: เมื่อจอเล็กลง ให้เปลี่ยนจาก "เรียงข้าง (2 คอลัมน์)" เป็น
+   "เรียงต่อกันแนวตั้ง (สแตก)" แทน โดยรูปภาพยังคงแสดงผลครบทุกส่วนเสมอ
+   ไม่มีการซ่อนรูปทิ้ง เพื่อไม่ให้เนื้อหาขาดหายไป
+   ========================================================================== */
+
+/* 1. Desktop ขนาดใหญ่ (ตั้งแต่ 1200px ขึ้นไป) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
+
+/* 2. Notebook / Laptop (992px - 1199px) */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 940px;
+        padding: 0 1.2rem;
+    }
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+    .logo span {
+        font-size: 1.25rem;
+    }
+    /* ลดขนาดขั้นต่ำของรูปใน grid แบบยืดหยุ่นลงเล็กน้อย ให้พอดีพื้นที่ที่แคบลง */
+    .image-grid,
+    [class*="grid-flexible"] {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+/* 3. Tablet แนวนอน (768px - 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .logo span {
+        font-size: 1.1rem; /* ปรับขนาดฟอนต์โลโก้ให้เล็กลงเล็กน้อย */
+    }
+    .container {
+        gap: 2rem;
+    }
+    /* กริดที่ล็อกคอลัมน์ตายตัวไว้ 3 คอลัมน์ ให้ลดเหลือ 2 คอลัมน์บน Tablet เพื่อไม่ให้รูปแคบเกินไป */
+    .king_battle_2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 4. Tablet แนวตั้ง และมือถือจอใหญ่ (ต่ำกว่า 768px)
+   จุดสำคัญ: เปลี่ยน section ที่เดิมวางเนื้อหา+รูปภาพเรียงข้างกัน (flex row)
+   ให้เรียงต่อกันในแนวตั้งแทน (flex column) และขยายทุกกล่องให้เต็มความกว้าง
+   100% รูปภาพทุกส่วนยังคงแสดงผลอยู่ครบ ไม่ถูกซ่อน */
+@media (max-width: 768px) {
+
+    /* เมนูหลัก */
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .menu > li:last-child {
+        margin-left: 0;
+    }
+    .menu li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .menu a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* บังคับให้ section ที่ปกติวางเนื้อหาและรูปภาพเรียงข้างกัน (display:flex)
+       เปลี่ยนมาเรียงต่อกันในแนวตั้งแทน */
+    .section,
+    .section-4,
+    .section-6,
+    .section-p8,
+    .section-p8_1,
+    .article-20_2 {
+        flex-direction: column !important;
+    }
+
+    /* ขยายกล่องเนื้อหาและกล่องรูปภาพทุกแบบให้เต็มความกว้าง 100% เมื่อเรียงแนวตั้ง
+       (ครอบคลุมทุก section-pX เพราะทุกอันใช้คลาส .content-box / .image-grid ร่วมกัน) */
+    .content-box,
+    .image-grid,
+    [class*="_img"],
+    [class*="-img"],
+    .mauser66,
+    .medal,
+    .medal_coin,
+    .ribbon,
+    .king_battle,
+    .king_battle_2,
+    .section-40,
+    .cardbox,
+    .card-grid {
+        width: 100% !important;
+    }
+
+    .content-box {
+        padding: 15px !important;
+    }
+
+    /* ลดขนาดขั้นต่ำของรูปใน grid แบบยืดหยุ่น ให้พอดีความกว้างหน้าจอมือถือ
+       แต่ยังคงพยายามแสดงหลายรูปต่อแถวถ้ามีที่พอ ไม่ล้นจอ */
+    .image-grid,
+    [class*="grid-flexible"] {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    /* กริดที่ล็อกจำนวนคอลัมน์ตายตัว ให้เหลือ 2 คอลัมน์บนจอแนวตั้ง/มือถือจอใหญ่ */
+    .mauser66,
+    .medal_coin,
+    .ribbon,
+    .king_battle_2,
+    .grid-flexible8,
+    .grid-flexible8_1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .section-40 {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    /* ลดการเยื้องย่อหน้าให้อ่านง่ายขึ้นบนจอแคบ */
+    section,
+    .section,
+    [class^="section-"] {
+        text-indent: 1.5em;
+    }
+
+    /* ปุ่มย้อนกลับ/ถัดไป */
+    .back_next {
+        width: 100%;
+        padding: 10px;
+    }
+    .back_next button {
+        width: 48%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+/* 5. มือถือขนาดกลาง (ต่ำกว่า 600px) */
+@media (max-width: 600px) {
+    /* หัว navbar: ให้ห่อบรรทัดได้แทนที่จะล้นจอ เมื่อโลโก้ยาวและมีปุ่มภาษา/ธีมอยู่ด้วย */
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+        padding: 0.8rem;
+    }
+    .logo {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .logo img {
+        width: 36px;
+        height: 36px;
+    }
+    .header-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* รูปภาพที่ยังเหลือ 2 คอลัมน์ ให้ยุบเหลือ 1 คอลัมน์ เพื่อให้แต่ละรูปแสดงผลชัดเจน ไม่แน่นจนเกินไป */
+    .mauser66,
+    .medal_coin,
+    .ribbon,
+    .king_battle_2,
+    .grid-flexible8,
+    .grid-flexible8_1 {
+        grid-template-columns: 1fr;
+    }
+
+    .article-20_1_img img {
+        width: 90%;
+    }
+
+    /* การ์ดในหน้าทำเนียบผู้บังคับบัญชา ให้เต็มความกว้างทีละใบ อ่านง่ายบนจอแคบ */
+    .card-grid {
+        grid-template-columns: 1fr;
+        margin: 12px;
+        gap: 15px;
+    }
+}
+
+/* 6. มือถือขนาดเล็กมาก (ต่ำกว่า 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* ลดขนาดตัวอักษรลงเล็กน้อยเพื่อให้พอดีหน้าจอ */
+    }
+    .logo span {
+        font-size: 0.85rem; /* ลดขนาดชื่อพิพิธภัณฑ์ที่ยาวเกินไป */
+    }
+    h2 {
+        font-size: 1.15rem;
+    }
+    .content-box {
+        padding: 12px !important;
+    }
+
+    /* กริดรูปภาพแบบยืดหยุ่นทั่วไป ให้เหลือคอลัมน์เดียวบนจอที่แคบมาก
+       ป้องกันรูปล้นขอบจอหรือแสดงผลไม่ครบ */
+    .image-grid,
+    [class*="grid-flexible"] {
+        grid-template-columns: 1fr;
+    }
+
+    .back_next button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}

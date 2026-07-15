@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พิพิธภัณฑ์ทหารราบ กองวิทยาการ ศูนย์การทหารราบ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/icon.png">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/icon.png" alt="" srcset="">
+            <span>พิพิธภัณฑ์ทหารราบ กองวิทยาการ ศูนย์การทหารราบ</span>
+        </div>
+        
+        
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <nav id="main-nav">
+    <ul class="menu">
+        <li><a href="index.html" rel="noopener noreferrer">หน้าหลัก</a></li>
+        <li><a href="board.html" target="_blank" rel="noopener noreferrer">ทำเนียบผู้บังคับบัญชาและกำลังพล</a></li>
+        <li><a href="#">ส่วนจัดแสดงภายในอาคาร ▼</a>
+        <ul class="dropdown">
+                <li><a href="room1.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๑ พระบิดาแห่งทหารราบไทย</a></li>
+                <li><a href="room2_1.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๒ วิวัฒนาการทหารไทย</a></li>
+                <li><a href="room3.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๓ ตัวอย่างเครื่องแต่งกายทหารบก</a></li>
+                <li><a href="room4.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๔ อาวุธยุทโธปกรณ์</a></li>
+                <li><a href="room5.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๕ วีรกรรมทหารราบดีเด่น</a></li>
+                <li><a href="room6.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๖ พระบารมีปกเกล้า</a></li>
+            </ul>
+        </li>
+        <li><a href="#">ส่วนจัดแสดงภายนอกอาคาร</a></li>
+        <li><a href="https://www.facebook.com/p/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%9A-%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%9A-100083551322926/" target="_blank" rel="noopener noreferrer">ติดตาม</a></li>
+    </ul>
+</nav>
+
+<div class="floating-hamburger-container" id="floating-nav">
+    <button class="floating-btn" id="floating-btn" title="เปิดเมนู">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="floating-menu-wrapper" id="floating-menu">
+        <ul class="floating-menu-list">
+            <li><a href="index.html" rel="noopener noreferrer">หน้าหลัก</a></li>
+            <li><a href="board.html" target="_blank" rel="noopener noreferrer">ทำเนียบผู้บังคับบัญชาและกำลังพล</a></li>
+            <li><a href="room1.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๑</a></li>
+            <li><a href="room2_1.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๒</a></li>
+            <li><a href="room3.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๓</a></li>
+            <li><a href="room4.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๔</a></li>
+            <li><a href="room5.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๕</a></li>
+            <li><a href="room6.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๖</a></li>
+            <li><a href="https://www.facebook.com/p/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%9A-%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%9A-100083551322926/" target="_blank" rel="noopener noreferrer">ติดตาม</a></li>
+        </ul>
+    </div>
+</div>
+    
+
+    <main class="container">
+        
+       
+
+        <span><h2>ประวัติความเป็นมา</h2></span>
+
+
+        <section class="section section-39" data-content-id="article-39">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        </section>
+
+        <section class="section section-39" data-content-id="">
+                            <div class="article-39-img" data-image-target="article-39">
+        </div>
+        </section>
+
+
+                <div class="divider"><span></span></div>
+
+ <!-- <section class="section section-40" data-content-id="">
+                    
+    
+                    <a href="room1.html" target="_blank" rel="noopener noreferrer"><div class="section-40_1">
+                        <div class="article-40-img" data-image-target="article-40">
+                        </div>
+                    <span>ห้องที่ ๑ พระบิดาแห่งทหารราบไทย</span>
+                    
+                    </div></a>
+
+                <a href="room2_1.html" target="_blank" rel="noopener noreferrer"><div class="section-40_1">
+                        <div class="article-40-img" data-image-target="article-41">
+                        </div>
+                    <span>ห้องที่ ๒ วิวัฒนาการทหารไทย</span>
+                    </div></a>
+                 
+<a href="room3.html" target="_blank" rel="noopener noreferrer"><div class="section-40_1">
+                        <div class="article-40-img" data-image-target="article-42">
+                        </div>
+                    <span>ห้องที่ ๓ ตัวอย่างเครื่องแต่งกายทหารบก</span>
+                    </div>
+</a>
+                     <a href="room4.html" target="_blank" rel="noopener noreferrer"><div class="section-40_1">
+                       
+                        <div class="article-40-img" data-image-target="article-43">
+                        </div>
+                    <span>ห้องที่ ๔ อาวุธยุทโธปกรณ์</span>
+                   </div></a>
+                    
+<a href="room5.html" target="_blank" rel="noopener noreferrer">  <div class="section-40_1">
+                       
+                        <div class="article-40-img" data-image-target="article-44">
+                        </div>
+                    <span>ห้องที่ ๕ วีรกรรมทหารราบดีเด่น</span>
+                    
+                    </div></a>
+                  
+<a href="room6.html" target="_blank" rel="noopener noreferrer">  <div class="section-40_1">
+                        <div class="article-40-img" data-image-target="article-45">
+                        </div>
+                    <span>ห้องที่ ๖ พระบารมีปกเกล้า</span>
+                    
+                    </div></a>
+                
+  </section> -->
+  
+    </main>
+    <div class="back_next">
+    <button id="prevBtn">◀ ย้อนกลับ</button>
+    <button id="nextBtn">ถัดไป ▶</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

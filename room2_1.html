@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ห้องที่ ๒ วิวัฒนาการทหารไทย</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="translate.css">
+    <link rel="icon" type="image/png" href="https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/icon.png">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/icon.png" alt="" srcset="">
+            <span>ห้องที่ ๒ วิวัฒนาการทหารไทย</span>
+        </div>
+        <div class="header-actions">
+            <div class="lang-switcher notranslate" id="lang-switcher">
+                <button class="lang-btn" id="lang-th" title="ภาษาไทย">
+                    <img src="https://flagcdn.com/w40/th.png" alt="TH">
+                </button>
+                <button class="lang-btn" id="lang-en" title="English">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="EN">
+                </button>
+                <button class="lang-btn" id="lang-cn" title="中文">
+                    <img src="https://flagcdn.com/w40/cn.png" alt="CN">
+                </button>
+                <button class="lang-btn" id="lang-jp" title="日本語">
+                    <img src="https://flagcdn.com/w40/jp.png" alt="JP">
+                </button>
+            </div>
+            <div id="google_translate_element" style="display:none;"></div>
+
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+    </header>
+ <nav id="main-nav">
+    <ul class="menu">
+        <li><a href="index.html" rel="noopener noreferrer">หน้าหลัก</a></li>
+        <li><a href="board.html" target="_blank" rel="noopener noreferrer">ทำเนียบผู้บังคับบัญชาและกำลังพล</a></li>
+        <li><a href="#">ส่วนจัดแสดงภายในอาคาร ▼</a>
+        <ul class="dropdown">
+                <li><a href="room1.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๑ พระบิดาแห่งทหารราบไทย</a></li>
+                <li><a href="room2_1.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๒ วิวัฒนาการทหารไทย</a></li>
+                <li><a href="room3.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๓ ตัวอย่างเครื่องแต่งกายทหารบก</a></li>
+                <li><a href="room4.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๔ อาวุธยุทโธปกรณ์</a></li>
+                <li><a href="room5.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๕ วีรกรรมทหารราบดีเด่น</a></li>
+                <li><a href="room6.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๖ พระบารมีปกเกล้า</a></li>
+            </ul>
+        </li>
+        <li><a href="#">ส่วนจัดแสดงภายนอกอาคาร</a></li>
+        <li><a href="https://www.facebook.com/p/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%9A-%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%9A-100083551322926/" target="_blank" rel="noopener noreferrer">ติดตาม</a></li>
+    </ul>
+</nav>
+
+<div class="floating-hamburger-container" id="floating-nav">
+    <button class="floating-btn" id="floating-btn" title="เปิดเมนู">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="floating-menu-wrapper" id="floating-menu">
+        <ul class="floating-menu-list">
+            <li><a href="index.html" rel="noopener noreferrer">หน้าหลัก</a></li>
+            <li><a href="board.html" target="_blank" rel="noopener noreferrer">ทำเนียบผู้บังคับบัญชาและกำลังพล</a></li>
+            <li><a href="room1.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๑</a></li>
+            <li><a href="room2_1.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๒</a></li>
+            <li><a href="room3.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๓</a></li>
+            <li><a href="room4.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๔</a></li>
+            <li><a href="room5.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๕</a></li>
+            <li><a href="room6.html" target="_blank" rel="noopener noreferrer">ห้องที่ ๖</a></li>
+            <li><a href="https://www.facebook.com/p/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%9A-%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3-%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%9A-100083551322926/" target="_blank" rel="noopener noreferrer">ติดตาม</a></li>
+        </ul>
+    </div>
+</div>
+    <main class="container">
+        <span><h2>การทหารสมัยสุโขทัย</h2></span>
+        <section class="section section-5" data-content-id="article-05">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+            <div class="image-grid grid-flexible" data-image-target="article-05"> </div>
+        
+
+        </section>
+        
+        <section class="section section-p5_1" data-content-id="article-05_1">
+            <div class="image-grid grid-flexible" data-image-target="article-05_1"> </div>
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        </section>
+
+        <section class="section section-p5_2" data-content-id="article-05_2">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            
+            </div>
+            <div class="article-05_2_img" data-image-target="article-05_2"> </div>
+        </section>
+
+        
+
+
+        <section class="section section-p5_3" data-content-id="article-05_3">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        </section>
+
+        <div class="divider"><span></span></div>
+
+          <span><h2>การทหารสมัยอยุธยา</h2></span>
+          
+          <section class="section section-6" data-content-id="article-06">
+                <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+            <div class="section section-6_img" data-image-target="article-06"> </div>
+        </section>
+
+        
+        <section class="section section-p6_1" data-content-id="article-06_1">
+            <div class="image-grid grid-flexible" data-image-target="article-06_1">
+                </div>
+                <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+
+        </section>
+
+            <section class="section section-p6_2" data-content-id="article-06_2">
+            
+                </div>
+                <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+            
+        </section>
+        <div class="image-grid grid-flexible" data-image-target="article-06_2"></div>
+
+            <section class="section section-p6_3" data-content-id="article-06_3">
+            
+                </div>
+                <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+            <div class="image-grid grid-flexible" data-image-target="article-06_3"></div>
+        </section>
+
+        <section class="section section-p6_4" data-content-id="article-06_4">
+            
+                </div>
+
+            <div class="image-grid grid-flexible" data-image-target="article-06_4"></div>
+                            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        </section>
+
+          <div class="divider"><span></span></div>
+
+          <span><h2>การทหารสมัยธนบุรี</h2></span>
+          
+          <section class="section section-p7" data-content-id="article-07">
+            <div class="image-grid grid-flexible" data-image-target="article-07"></div>
+                             
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+
+        </section>
+
+          <div class="divider"><span></span></div>
+
+        <span><h2>การทหารสมัยรัตนโกสินทร์ตอนต้น</h2></span>
+        
+        </div>
+
+        <section class="section section-p8" data-content-id="article-08">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        <div class="image-grid grid-flexible8" data-image-target="article-08"></div>
+        </section>
+
+            <section class="section section-p8_1" data-content-id="article-08_1">
+                    <div class="image-grid grid-flexible8_1" data-image-target="article-08_1"></div>
+                    <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        </section>
+
+                <section class="section section-8_2" data-content-id="article-08_2">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        <div class="image-grid grid-flexible" data-image-target="article-08_2"></div>
+        </section>
+
+        <section class="section section-p8_3" data-content-id="article-08_3">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+            </section>
+
+            <section class="section section-p8_4" data-content-id="article-08_4">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        </section>
+
+         <section class="section section-p8_5" data-content-id="article-08_5">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+            <div class="image-grid grid-flexible8_5" data-image-target="article-08_5"></div>
+        </section>
+
+            <section class="section section-p8_6" data-content-id="article-08_6">
+            <div class="content-box">
+                <p>กำลังโหลดเนื้อหา...</p>
+            </div>
+        </section>
+
+
+<div class="back_next">
+    <button id="prevBtn">◀ ย้อนกลับ</button>
+    <button id="nextBtn">ถัดไป ▶</button>
+</div>
+    </main>
+
+    <script src="script.js"></script>
+        <script src="translate.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* ==========================================================================
+   translate.css
+   สไตล์สำหรับปุ่มสลับภาษา (TH / EN / CN) ที่วางอยู่ก่อนปุ่มสลับโหมดมืด/สว่าง
+   ========================================================================== */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--transition, all 0.3s ease);
+}
+
+/* ทำให้ปุ่มสลับโหมดมืด/สว่างมีขนาดเสมอกับปุ่มธง เพื่อให้ดูเป็นแถวเดียวกัน 4 ปุ่ม */
+.header-actions .theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+}
+
+.lang-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.lang-btn:hover {
+    transform: scale(1.1);
+    border-color: var(--nav-text, #ffffff);
+}
+
+.lang-btn.active {
+    border-color: var(--nav-text, #ffffff);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+/* ซ่อนแถบเครื่องมือของ Google Translate ที่ขึ้นด้านบนอัตโนมัติ */
+.goog-te-banner-frame.skiptranslate,
+body > .skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* จัดตำแหน่งบนมือถือให้ไม่ล้นจอ */
+@media (max-width: 480px) {
+    .header-actions {
+        gap: 6px;
+    }
+    .lang-switcher {
+        gap: 6px;
+    }
+    .lang-btn,
+    .header-actions .theme-btn {
+        width: 28px;
+        height: 28px;
+    }
+}

@@ -1,0 +1,60 @@
+[
+        {
+        "id": 0,
+        "name": "พ.อ. ศุภชัย โยคนิตย์",
+        "job": "ผู้อำนวยการกองวิทยาการ",
+        "img": "https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/board/head.jpg"
+    },
+    {
+        "id": 1,
+        "name": "พ.อ. ก้องกิตติภพ พรหมลภัส",
+        "job": "หัวหน้าแผนกห้องสมุดและพิพิธภัณฑ์",
+        "img": "https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/board/kong.jpg"
+    },
+    {
+        "id": 2,
+        "name": "ร.ท. ทวีทรัพย์  ทินวงค์",
+        "job": "นายประวัติศาสตร์ ศร.",
+        "img": "https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/board/dome.png"
+    },
+    {
+        "id": 3,
+        "name": "จ.ส.อ. หญิง นุชรี มหาชัย",
+        "job": "เสมียน กวก.ศร.",
+        "img": "https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/board/nuch.jpg"
+    },
+       {
+        "id": 4,
+        "name": "จ.ส.อ. นฤเทพ สามนปาล",
+        "job": "ช่างเขียน กวก.ศร.",
+        "img": "https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/board/keng.jpg"
+    },
+           {
+        "id": 5,
+        "name": "จ.ส.อ. นฤเทพ นนทะ",
+        "job": "ช่างอาวุธ กวก.ศร.",
+        "img": "https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/board/arm.jpg"
+    },
+
+           {
+        "id": 6,
+        "name": "ส.อ. ชฎารัตน์ ธนะบัตร",
+        "job": "เสมียน กวก.ศร.",
+        "img": "https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/board/am.jpg"
+    },
+
+            {
+        "id": 7,
+        "name": "ส.อ. จุติภรณ์ ขาวละเอียด",
+        "job": "เสมียน กวก.ศร.",
+        "img": "https://pub-6667a02b72e940ebbd8b460f8aa5c219.r2.dev/pic/board/tar.jpg"
+    },
+
+                {
+        "id": 8,
+        "name": "จ.ส.อ. อธิพงศ์ เขียวโพธิ์",
+        "job": "เสมียน กวก.ศร.",
+        "img": ""
+    }
+
+]
